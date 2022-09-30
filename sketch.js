@@ -15,6 +15,7 @@ function setup(){
   quiz = new Quiz();
   quiz.getState();
   quiz.start();
+  question = new Question()
 }
 
 
