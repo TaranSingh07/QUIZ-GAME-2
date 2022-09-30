@@ -8,9 +8,9 @@ class Contestant {
   getCount(){
     var contestantCountRef = database.ref('contestantCount');
 
-    // contestantCountRef.on("value",(data)=>{
-    //   contestantCount = data.val();
-    // })
+     contestantCountRef.on("value",(data)=>{
+       contestantCount = data.val();
+     })
 
 
     // contestantCountRef.on("value",()=>{
@@ -24,9 +24,9 @@ class Contestant {
   }
 
   updateCount(count){
-    // database.ref('/').update({
-    //   count: contestantCount
-    // });
+    database.ref('/').update({
+       count: contestantCount
+     });
 
 
     // database.ref('/').update({
@@ -44,6 +44,4 @@ class Contestant {
     // });
 
   }
-
- 
 }
